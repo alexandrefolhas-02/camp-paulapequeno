@@ -137,6 +137,9 @@ export default function PricingSection() {
                         Em até 10x SEM JUROS
                       </span>
                     </div>
+                    <p className="mt-4 font-display text-2xl sm:text-3xl text-white font-bold tracking-tight">
+                      10 vezes de <span className="text-gold-gradient">R$ 243,40</span>
+                    </p>
                   </div>
 
                   <div className="w-full space-y-4 mb-8">
@@ -144,7 +147,7 @@ export default function PricingSection() {
                       href="https://pag.ae/81MHb3z-p"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group relative flex items-center justify-center gap-3 w-full py-5 font-display text-sm uppercase tracking-[0.2em] font-bold text-[#0A0A0A] bg-gold-gradient hover:brightness-110 transition-all duration-300 shadow-xl shadow-[#DAA520]/10 overflow-hidden"
+                      className="group relative flex items-center justify-center gap-3 w-full py-5 font-display text-sm uppercase tracking-[0.2em] font-bold text-[#0A0A0A] bg-gradient-to-r from-[#B8860B] via-[#DAA520] to-[#FFD700] hover:brightness-110 transition-all duration-300 shadow-xl shadow-[#DAA520]/10 overflow-hidden"
                     >
                       <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out" />
                       GARANTIR MINHA VAGA AGORA
