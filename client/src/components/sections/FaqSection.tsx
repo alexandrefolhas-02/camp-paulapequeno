@@ -31,7 +31,7 @@ const faqs = [
   {
     question: "Como funciona o pagamento?",
     answer:
-      "O pagamento pode ser feito via PIX, cartão de crédito (em até 12x) ou boleto bancário. Após a confirmação do pagamento, o atleta recebe a confirmação de inscrição e todas as informações necessárias para o camp.",
+      "O pagamento pode ser feito via PIX, cartão de crédito (em até 10x sem juros) ou boleto bancário. Após a confirmação do pagamento, o atleta recebe a confirmação de inscrição e todas as informações necessárias para o camp.",
   },
   {
     question: "Quantas vagas existem?",
