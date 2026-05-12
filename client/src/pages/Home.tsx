@@ -1,5 +1,5 @@
 /**
- * Paula Pequeno Legacy Camp — Landing Page
+ * Paula Pequeno Elite Camp — Landing Page
  * Design: Arena Épica (Brutalismo Esportivo Luxuoso)
  * Palette: Black (#0A0A0A), Gold (#C9A84C / #DAA520 / #FFD700), Olympic Blue (#0057B8), White
  * Typography: Oswald (display), Source Sans 3 (body), Playfair Display (accent)

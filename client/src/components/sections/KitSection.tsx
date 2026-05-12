@@ -5,7 +5,7 @@ import { Shirt, Droplets, CircleDot, BookOpen, Award } from "lucide-react";
 const KIT_IMG = "/athlete-kit-premium-J5ARdSYvpYdE9RtSoNXxr4.webp";
 
 const kitItems = [
-  { icon: Shirt, label: "Camiseta Oficial", desc: "Uniforme exclusivo do Legacy Camp" },
+  { icon: Shirt, label: "Camiseta Oficial", desc: "Uniforme exclusivo do Elite Camp" },
   { icon: Droplets, label: "Garrafa Squeeze", desc: "Squeeze premium personalizada" },
   { icon: CircleDot, label: "Pulseira Atleta", desc: "Identificação exclusiva do camp" },
   { icon: BookOpen, label: "Passaporte do Camp", desc: "Registro de toda a jornada" },
@@ -34,7 +34,7 @@ export default function KitSection() {
             <div className="relative gold-border-glow overflow-hidden">
               <img
                 src={KIT_IMG}
-                alt="Kit do Atleta — Paula Pequeno Legacy Camp"
+                alt="Kit do Atleta — Paula Pequeno Elite Camp"
                 className="w-full h-auto"
               />
               {/* Overlay gradient */}

@@ -54,7 +54,7 @@ export default function ReportSection() {
             </div>
             <div>
               <h3 className="font-display text-lg uppercase tracking-wider text-white">Avaliação Individual</h3>
-              <p className="font-body text-xs text-white/40">Paula Pequeno Legacy Camp — Relatório Técnico</p>
+              <p className="font-body text-xs text-white/40">Paula Pequeno Elite Camp — Relatório Técnico</p>
             </div>
           </div>
 
