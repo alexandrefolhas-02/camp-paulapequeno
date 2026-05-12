@@ -5,44 +5,53 @@ import { Sparkles, TrendingUp, Crown } from "lucide-react";
 const days = [
   {
     day: "01",
+    date: "Sexta - 24/07",
     title: "Sonho & Pertencimento",
     icon: Sparkles,
     color: "#DAA520",
     items: [
-      "Recepção premium",
-      "Kit atleta exclusivo",
-      "História da campeã",
-      "Avaliação técnica individual",
-      "Formação dos times",
-      "Desafios e integração",
+      "07:30 - Credenciamento/Retirada do Kit",
+      "08:00 - Abertura com Paula Pequeno",
+      "08:15 - Avaliação Técnica e Testes",
+      "09:45 - Treino Técnico: Toque e Manchete",
+      "11:15 - Atividade de Descontração",
+      "13:30 - Palestra sobre Nutrição",
+      "14:15 - Treino Técnico: Saque e Passe",
+      "15:45 - Jogos e Desafios",
+      "16:45 - Jogos Pais e Filhos",
+      "18:00 - Encerramento / Melhores do Dia",
     ],
   },
   {
     day: "02",
+    date: "Sábado - 25/07",
     title: "Evolução & Mentalidade",
     icon: TrendingUp,
     color: "#0057B8",
     items: [
-      "Fundamentos avançados",
-      "Filmagem técnica",
-      "Palestra poderosa",
-      "Mentalidade campeã",
-      "Pais x filhos challenge",
-      "Sessão exclusiva com Paula",
+      "08:00 - Treino Técnico/Tático: Levantamento e Ataque",
+      "09:30 - Treino Técnico: Bloqueio e Defesa",
+      "11:00 - Atividade Surpresa",
+      "13:15 - Workshop: Prep. Física e Fisioterapia",
+      "14:00 - Treino Técnico/Tático: Ataque",
+      "15:30 - Jogos e Desafios",
+      "17:00 - Jogos Pais e Filhos",
+      "18:00 - Encerramento / Melhores do Dia",
     ],
   },
   {
     day: "03",
+    date: "Domingo - 26/07",
     title: "Glória & Memória",
     icon: Crown,
     color: "#FFD700",
     items: [
-      "Mini torneio oficial",
-      "Finais emocionantes",
-      "Cerimônia de premiação",
-      "Medalhas e troféus",
-      "Fotos profissionais",
-      "Encerramento épico",
+      "08:00 - Início do Torneio Elite Camp",
+      "11:00 - Mesa Redonda com Paula Pequeno",
+      "13:30 - Finais do Torneio",
+      "15:30 - Palestra: Sonhe, Lute e Realize",
+      "16:30 - Entrega de Certificados e Premiações",
+      "17:00 - Encerramento, Fotos e Sorteios",
     ],
   },
 ];
@@ -109,7 +118,9 @@ export default function ProgramSection() {
                     <day.icon size={20} style={{ color: day.color }} />
                   </div>
                   <div className="flex items-center gap-3 mb-1">
-                    <span className="font-display text-xs uppercase tracking-[0.2em] text-white/40">Dia {day.day}</span>
+                    <span className="font-display text-xs uppercase tracking-[0.2em] text-white/40">
+                      Dia {day.day} • {day.date}
+                    </span>
                     <div className="flex-1 h-px bg-white/10" />
                   </div>
                   <h3 className="font-display text-xl lg:text-2xl uppercase tracking-wide text-white">
