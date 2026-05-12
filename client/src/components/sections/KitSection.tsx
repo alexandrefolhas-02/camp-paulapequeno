@@ -5,9 +5,9 @@ import { Shirt, Droplets, CircleDot, BookOpen, Award } from "lucide-react";
 const KIT_IMG = "/athlete-kit-premium-J5ARdSYvpYdE9RtSoNXxr4.webp";
 
 const kitItems = [
-  { icon: Shirt, label: "Camiseta Oficial", desc: "Uniforme exclusivo do Elite Camp" },
+  { icon: Shirt, label: "KIT Oficial", desc: "Uniforme exclusivo do Elite Camp" },
   { icon: Droplets, label: "Garrafa Squeeze", desc: "Squeeze premium personalizada" },
-  { icon: CircleDot, label: "Pulseira Atleta", desc: "Identificação exclusiva do camp" },
+  { icon: CircleDot, label: "Toalha personalizada", desc: "Brindes exclusivos do camp" },
   { icon: BookOpen, label: "Passaporte do Camp", desc: "Registro de toda a jornada" },
   { icon: Award, label: "Certificado Oficial", desc: "Assinado por Paula Pequeno" },
 ];
