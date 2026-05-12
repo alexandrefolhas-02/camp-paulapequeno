@@ -193,7 +193,7 @@ export default function PricingSection() {
           className="text-center mt-12"
         >
           <p className="font-body text-sm text-white/30">
-            Dúvidas sobre o pagamento? <a href="#contato" className="text-[#DAA520] hover:underline">Fale com nossa equipe</a>
+            Dúvidas sobre o pagamento? <a href="https://wa.me/5521968997981?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20Paula%20Pequeno%20Elite%20Camp" target="_blank" rel="noopener noreferrer" className="text-[#DAA520] hover:underline">Fale com nossa equipe</a>
           </p>
         </motion.div>
       </div>
