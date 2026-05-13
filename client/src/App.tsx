@@ -10,6 +10,7 @@ import PaymentCancelled from "./pages/PaymentCancelled";
 import MyOrders from "./pages/MyOrders";
 import AdminDashboard from "./pages/AdminDashboard";
 import MaintenancePage from "./pages/MaintenancePage";
+import ThankYouPage from "./pages/ThankYouPage";
 
 function Router() {
   return (
@@ -20,6 +21,7 @@ function Router() {
       <Route path={"/meus-pedidos"} component={MyOrders} />
       <Route path={"/admin"} component={AdminDashboard} />
       <Route path={"/manutencao"} component={MaintenancePage} />
+      <Route path={"/obrigado"} component={ThankYouPage} />
       <Route path={"/404"} component={NotFound} />
       <Route component={NotFound} />
     </Switch>
