@@ -12,6 +12,7 @@ import ProgramSection from "@/components/sections/ProgramSection";
 import KitSection from "@/components/sections/KitSection";
 import ReportSection from "@/components/sections/ReportSection";
 import PricingSection from "@/components/sections/PricingSection";
+import GiveawaySection from "@/components/sections/GiveawaySection";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import FaqSection from "@/components/sections/FaqSection";
 import FinalCtaSection from "@/components/sections/FinalCtaSection";
@@ -29,6 +30,7 @@ export default function Home() {
       <KitSection />
       <ReportSection />
       <PricingSection />
+      <GiveawaySection />
       <TestimonialsSection />
       <FaqSection />
       <FinalCtaSection />
