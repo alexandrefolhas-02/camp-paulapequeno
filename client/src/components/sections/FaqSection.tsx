@@ -6,37 +6,63 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { 
+  Users, 
+  Ticket, 
+  CreditCard, 
+  Trophy, 
+  Heart, 
+  Package, 
+  Coffee, 
+  Stethoscope, 
+  FileText 
+} from "lucide-react";
 
 const faqs = [
   {
     question: "Qual a idade ideal para participar?",
-    answer:
-      "O camp é voltado para crianças e adolescentes de 11 a 17 anos. Dividimos os grupos por faixa etária para garantir que cada atleta tenha uma experiência adequada ao seu nível de desenvolvimento.",
-  },
-  {
-    question: "Precisa já jogar vôlei?",
-    answer:
-      "Não é necessário ter experiência prévia. O camp é projetado para atender desde iniciantes até atletas mais experientes. A equipe técnica adapta os treinos para cada nível, garantindo evolução para todos.",
-  },
-  {
-    question: "O almoço está incluso?",
-    answer:
-      "Sim, todas as refeições durante o período do camp estão inclusas: lanche da manhã, almoço e lanche da tarde. Trabalhamos com alimentação balanceada e adequada para atletas em atividade.",
-  },
-  {
-    question: "Os pais podem acompanhar?",
-    answer:
-      "Os pais são bem-vindos para acompanhar em momentos específicos, conforme anunciado na programação. Durante os treinos, os atletas ficam sob responsabilidade da equipe técnica.",
-  },
-  {
-    question: "Como funciona o pagamento?",
-    answer:
-      "O pagamento pode ser feito via PIX, cartão de crédito (em até 10x sem juros) ou boleto bancário. Após a confirmação do pagamento, o atleta recebe a confirmação de inscrição e todas as informações necessárias para o camp.",
+    answer: "O camp é voltado para crianças e adolescentes de 11 a 17 anos. Dividimos os grupos por faixa etária para garantir que cada atleta tenha uma experiência adequada ao seu nível de desenvolvimento.",
+    icon: Users,
   },
   {
     question: "Quantas vagas existem?",
-    answer:
-      "São apenas 60 vagas disponíveis para garantir a qualidade da experiência e a atenção individualizada. As vagas são preenchidas por ordem de inscrição e pagamento confirmado.",
+    answer: "São apenas 60 vagas disponíveis para garantir a qualidade da experiência e a atenção individualizada. As vagas são preenchidas por ordem de inscrição e pagamento confirmado.",
+    icon: Ticket,
+  },
+  {
+    question: "Como funciona o pagamento?",
+    answer: "O pagamento pode ser feito via PIX, cartão de crédito (em até 10x sem juros) ou boleto bancário. Após a confirmação do pagamento, o atleta recebe a confirmação de inscrição e todas as informações necessárias.",
+    icon: CreditCard,
+  },
+  {
+    question: "O evento é apenas para atletas profissionais ou iniciantes podem participar?",
+    answer: "O Elite Camp é desenhado para atletas que buscam evolução, independentemente do nível atual. No primeiro dia, realizamos uma avaliação técnica individual para nivelar os grupos em ambientes desafiadores e adequados.",
+    icon: Trophy,
+  },
+  {
+    question: "Os pais podem acompanhar? Precisam pagar inscrição separada?",
+    answer: "Não precisam pagar extra! Os pais são bem-vindos em momentos específicos (palestras de Nutrição, Workshops e Palestra Magna da Paula Pequeno). Durante os treinos técnicos, os atletas ficam sob responsabilidade da nossa equipe.",
+    icon: Heart,
+  },
+  {
+    question: "O que exatamente vem no Kit Atleta?",
+    answer: "É um dos kits mais completos do mercado: 1 camisa de treino, 1 short de treino, 1 camisa casual, 1 short casual, squeeze, toalha, sacochila e o passaporte do atleta. Entregue no credenciamento.",
+    icon: Package,
+  },
+  {
+    question: "Como funciona a alimentação durante os 3 dias?",
+    answer: "Para foco total no treino, incluímos almoço e dois coffee breaks diários (sexta, sábado e domingo), além de área de hidratação constante.",
+    icon: Coffee,
+  },
+  {
+    question: "Haverá suporte médico no local?",
+    answer: "Sim. Teremos profissionais de fisioterapia e primeiros socorros de prontidão durante todas as atividades práticas e o torneio oficial.",
+    icon: Stethoscope,
+  },
+  {
+    question: "Quais documentos e materiais o atleta deve levar?",
+    answer: "É obrigatório apresentar documento com foto no credenciamento. Recomendamos levar itens de higiene pessoal, joelheiras e tênis de vôlei. O uniforme será fornecido por nós.",
+    icon: FileText,
   },
 ];
 
@@ -78,12 +104,17 @@ export default function FaqSection() {
               <AccordionItem
                 key={`faq-${i}`}
                 value={`faq-${i}`}
-                className="border border-white/5 bg-[#0D0D0D] px-6 hover:border-[#DAA520]/15 transition-colors duration-300 data-[state=open]:border-[#DAA520]/20"
+                className="border border-white/5 bg-[#0D0D0D] px-4 sm:px-6 hover:border-[#DAA520]/15 transition-colors duration-300 data-[state=open]:border-[#DAA520]/20 rounded-lg overflow-hidden"
               >
-                <AccordionTrigger className="font-display text-sm sm:text-base uppercase tracking-wider text-white/80 hover:text-[#DAA520] py-5 [&[data-state=open]]:text-[#DAA520]">
-                  {faq.question}
+                <AccordionTrigger className="font-display text-sm sm:text-base uppercase tracking-wider text-white/80 hover:text-[#DAA520] py-5 [&[data-state=open]]:text-[#DAA520] text-left gap-4 hover:no-underline group">
+                  <div className="flex items-center gap-4">
+                    <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#DAA520]/10 group-hover:bg-[#DAA520]/20 transition-colors shrink-0">
+                      <faq.icon size={16} className="text-[#DAA520]" />
+                    </div>
+                    {faq.question}
+                  </div>
                 </AccordionTrigger>
-                <AccordionContent className="font-body text-sm sm:text-base text-white/50 leading-relaxed pb-5">
+                <AccordionContent className="font-body text-sm sm:text-base text-white/50 leading-relaxed pb-5 pl-12">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
