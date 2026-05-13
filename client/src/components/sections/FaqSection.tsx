@@ -11,7 +11,7 @@ const faqs = [
   {
     question: "Qual a idade ideal para participar?",
     answer:
-      "O camp é voltado para crianças e adolescentes de 8 a 17 anos. Dividimos os grupos por faixa etária para garantir que cada atleta tenha uma experiência adequada ao seu nível de desenvolvimento.",
+      "O camp é voltado para crianças e adolescentes de 11 a 17 anos. Dividimos os grupos por faixa etária para garantir que cada atleta tenha uma experiência adequada ao seu nível de desenvolvimento.",
   },
   {
     question: "Precisa já jogar vôlei?",
@@ -26,7 +26,7 @@ const faqs = [
   {
     question: "Os pais podem acompanhar?",
     answer:
-      "Os pais são bem-vindos para acompanhar em momentos específicos, como a abertura, o desafio Pais x Filhos no Dia 2 e a cerimônia de premiação no Dia 3. Durante os treinos, os atletas ficam sob responsabilidade da equipe técnica.",
+      "Os pais são bem-vindos para acompanhar em momentos específicos, conforme anunciado na programação. Durante os treinos, os atletas ficam sob responsabilidade da equipe técnica.",
   },
   {
     question: "Como funciona o pagamento?",

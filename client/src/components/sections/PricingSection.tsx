@@ -12,10 +12,10 @@ export default function PricingSection() {
     },
     {
       title: "Kit Atleta Exclusivo",
-      description: "1 Camisa treino, 1 Short de treino, 1 Camisa Casual, 1 Short Casual, 1 Squeeze, 1 Toalha, 1 Sacochila e 1 Passaporte do atleta"
+      description: "2 Camisas de treino, 2 Shorts de treino, 1 Squeeze, 1 Toalha, 1 Sacochila e 1 Passaporte do atleta"
     },
     {
-      title: "Alimentação Completa",
+      title: "Refeições",
       description: "Almoço e Coffee break inclusos nos 3 dias"
     },
     {
@@ -24,7 +24,7 @@ export default function PricingSection() {
     },
     {
       title: "Conteúdo para Pais",
-      description: "Acesso à Palestra da Paula Pequeno, Palestra de Nutrição e Workshop de Fisioterapia/Prep. Física"
+      description: "Acesso à Palestra da Paula Pequeno, Palestra de Nutrição e Workshop de Fisioterapia/Prep. Física e participação em atividades específicas da programação"
     },
     {
       title: "Memórias e Prêmios",
@@ -86,14 +86,14 @@ export default function PricingSection() {
             {/* Card Content */}
             <div className="relative bg-[#0D0D0D] border border-white/5 overflow-hidden">
               <div className="grid lg:grid-cols-2">
-                
+
                 {/* Left Column: Benefits */}
                 <div className="p-8 lg:p-12 border-b lg:border-b-0 lg:border-r border-white/5 bg-white/[0.01]">
                   <h3 className="font-display text-xl uppercase tracking-wider text-white mb-8 flex items-center gap-3">
                     <Sparkles className="text-[#DAA520]" size={20} />
                     O que está incluso
                   </h3>
-                  
+
                   <ul className="space-y-6">
                     {benefits.map((benefit, i) => (
                       <li key={i} className="flex items-start gap-4">

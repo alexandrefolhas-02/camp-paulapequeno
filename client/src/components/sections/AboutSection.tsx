@@ -18,7 +18,7 @@ export default function AboutSection() {
     { number: 2, suffix: "x", label: "Campeã Olímpica" },
     { number: 2, suffix: "x", label: "Melhor do Mundo" },
     { number: 1, suffix: "", label: "Única MVP Olímpica do Brasil" },
-    { number: 15, suffix: "+", label: "Anos de Carreira" },
+    { number: +20, suffix: "+", label: "Anos de Carreira Profissional" },
   ];
 
   return (
