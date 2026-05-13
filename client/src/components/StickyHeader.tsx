@@ -63,9 +63,7 @@ export default function StickyHeader() {
             {/* CTA + Mobile Toggle */}
             <div className="flex items-center gap-4">
               <a
-                href={WHATSAPP_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#precos"
                 className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-[#B8860B] to-[#DAA520] text-[#0A0A0A] font-display text-xs uppercase tracking-wider font-bold rounded-sm hover:from-[#DAA520] hover:to-[#FFD700] transition-all duration-300"
               >
                 Garantir Vaga
@@ -106,9 +104,8 @@ export default function StickyHeader() {
                 </motion.a>
               ))}
               <motion.a
-                href={WHATSAPP_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#precos"
+                onClick={() => setMobileOpen(false)}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: navItems.length * 0.08 }}
