@@ -46,7 +46,7 @@ const faqs = [
   },
   {
     question: "O que exatamente vem no Kit Atleta?",
-    answer: "É um dos kits mais completos do mercado: 1 camisa de treino, 1 short de treino, 1 camisa casual, 1 short casual, squeeze, toalha, sacochila e o passaporte do atleta. Entregue no credenciamento.",
+    answer: "É um dos kits mais completos do mercado: 2 camisas de treino, 2 shorts de treino, squeeze, toalha, sacochila e o passaporte do atleta. O atleta já recebe tudo no credenciamento, logo na abertura do evento.",
     icon: Package,
   },
   {
