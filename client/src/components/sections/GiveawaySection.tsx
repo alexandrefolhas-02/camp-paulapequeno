@@ -52,7 +52,7 @@ export default function GiveawaySection() {
           
           <div className="relative gold-border-glow rounded-2xl overflow-hidden shadow-2xl">
             <img
-              src="/athlete-kit-premium-J5ARdSYvpYdE9RtSoNXxr4.webp"
+              src="/kit-sorteio-paula-pequeno.jpg"
               alt="Kit Personalizado Paula Pequeno"
               className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
             />
