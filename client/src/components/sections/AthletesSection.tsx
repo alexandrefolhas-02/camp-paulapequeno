@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "@/hooks/useInView";
-import { Users, VenusMars } from "lucide-react";
+import { Users } from "lucide-react";
 
 export default function AthletesSection() {
   const [ref, inView] = useInView({ threshold: 0.2 });
@@ -64,7 +64,7 @@ export default function AthletesSection() {
               {/* Info Card 2 */}
               <div className="flex items-center gap-6 p-6 rounded-xl bg-[#1A1A1A] border border-white/5 hover:border-[#DAA520]/30 transition-colors duration-300 group">
                 <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-lg bg-[#DAA520]/10 text-[#DAA520] group-hover:bg-[#DAA520] group-hover:text-black transition-colors duration-300">
-                  <VenusMars size={28} />
+                  <Users size={28} />
                 </div>
                 <div>
                   <h3 className="text-white/60 text-sm font-medium tracking-wider uppercase">CATEGORIAS</h3>
