@@ -7,6 +7,7 @@
 
 import HeroSection from "@/components/sections/HeroSection";
 import AboutSection from "@/components/sections/AboutSection";
+import AthletesSection from "@/components/sections/AthletesSection";
 import ExperienceSection from "@/components/sections/ExperienceSection";
 import ProgramSection from "@/components/sections/ProgramSection";
 import KitSection from "@/components/sections/KitSection";
@@ -25,6 +26,7 @@ export default function Home() {
       <StickyHeader />
       <HeroSection />
       <AboutSection />
+      <AthletesSection />
       <ExperienceSection />
       <ProgramSection />
       <KitSection />

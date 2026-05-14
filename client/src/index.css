@@ -55,6 +55,7 @@
   --font-display: 'Oswald', sans-serif;
   --font-body: 'Source Sans 3', sans-serif;
   --font-accent: 'Playfair Display', serif;
+  --font-urbanist: 'Urbanist', sans-serif;
 }
 
 :root {
@@ -211,6 +212,9 @@
   }
   .font-accent {
     font-family: var(--font-accent);
+  }
+  .font-urbanist {
+    font-family: var(--font-urbanist);
   }
 
   /* Pulse CTA animation */
