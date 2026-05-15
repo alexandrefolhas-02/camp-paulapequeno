@@ -10,6 +10,7 @@ import AboutSection from "@/components/sections/AboutSection";
 import AthletesSection from "@/components/sections/AthletesSection";
 import ExperienceSection from "@/components/sections/ExperienceSection";
 import ProgramSection from "@/components/sections/ProgramSection";
+import StructureSection from "@/components/sections/StructureSection";
 import KitSection from "@/components/sections/KitSection";
 import ReportSection from "@/components/sections/ReportSection";
 import PricingSection from "@/components/sections/PricingSection";
@@ -29,6 +30,7 @@ export default function Home() {
       <AthletesSection />
       <ExperienceSection />
       <ProgramSection />
+      <StructureSection />
       <KitSection />
       <ReportSection />
       <PricingSection />

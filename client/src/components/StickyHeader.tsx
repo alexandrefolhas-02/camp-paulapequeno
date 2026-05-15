@@ -9,6 +9,7 @@ const navItems = [
   { label: "Experiência", href: "#experiencia" },
   { label: "Programação", href: "#programacao" },
   { label: "Kit Atleta", href: "#kit" },
+  { label: "Estrutura", href: "#estrutura" },
   { label: "Investimento", href: "#precos" },
   { label: "FAQ", href: "#faq" },
 ];
