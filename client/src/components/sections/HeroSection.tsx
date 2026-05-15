@@ -5,7 +5,7 @@
  * Inclui: data do evento, contagem regressiva, WhatsApp correto
  */
 import { motion } from "framer-motion";
-import { ArrowRight, MessageCircle, Calendar } from "lucide-react";
+import { ArrowRight, MessageCircle, Calendar, MapPin } from "lucide-react";
 import CountdownTimer from "@/components/CountdownTimer";
 
 const WHATSAPP_LINK = "https://wa.me/5521968997981?text=Ol%C3%A1!%20Quero%20garantir%20minha%20vaga%20no%20Paula%20Pequeno%20Elite%20Camp";
@@ -60,12 +60,30 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="flex items-center justify-center lg:justify-start gap-2 mb-8"
+              className="flex items-center justify-center lg:justify-start gap-2 mb-4"
             >
               <Calendar size={16} className="text-[#DAA520]" />
               <span className="font-display text-sm sm:text-base uppercase tracking-[0.15em] text-white/90">
                 24 a 26 de Julho de 2026
               </span>
+            </motion.div>
+
+            {/* Event Location Badge */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="flex items-start justify-center lg:justify-start gap-3 mb-8"
+            >
+              <MapPin size={18} className="text-[#DAA520] mt-0.5 shrink-0" />
+              <div className="flex flex-col text-center lg:text-left">
+                <span className="font-display text-sm sm:text-base uppercase tracking-wider text-[#DAA520] font-bold">
+                  CLUBE DE AERONÁUTICA - SEDE BARRA - RJ
+                </span>
+                <span className="font-body text-xs sm:text-sm text-white/60">
+                  Avenida Rachel de Queiroz, s/nº - Barra da Tijuca
+                </span>
+              </div>
             </motion.div>
 
             {/* Headline */}
