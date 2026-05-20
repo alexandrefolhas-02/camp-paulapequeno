@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "@/hooks/useInView";
-import { Sparkles, Check, ArrowRight, ShieldCheck, CreditCard, Wallet } from "lucide-react";
+import { Sparkles, Check, ArrowRight, ShieldCheck, CreditCard, Wallet, Info } from "lucide-react";
 
 export default function PricingSection() {
   const [ref, inView] = useInView({ threshold: 0.1 });
@@ -185,12 +185,84 @@ export default function PricingSection() {
           </motion.div>
         </div>
 
+        {/* Student Discount Banner */}
+        <div className="max-w-5xl mx-auto mt-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, delay: 0.4 }}
+            className="relative bg-gradient-to-r from-[#1A1500] to-[#0D0D0D] border border-[#DAA520]/50 overflow-hidden rounded-sm"
+          >
+            {/* Gold glow effect */}
+            <div className="absolute top-0 left-1/4 w-1/2 h-full bg-[#DAA520]/10 blur-3xl pointer-events-none" />
+            
+            <div className="relative z-10 p-8 lg:p-10 flex flex-col lg:flex-row items-center justify-between gap-8">
+              
+              {/* Left Side: Info */}
+              <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+                <div className="inline-block px-4 py-1.5 bg-[#DAA520] text-[#0A0A0A] font-display text-[10px] sm:text-xs uppercase tracking-[0.2em] font-bold mb-4 rounded-sm">
+                  20% de Desconto Exclusivo
+                </div>
+                <h3 className="font-display text-2xl sm:text-3xl uppercase tracking-wider text-white mb-2">
+                  Aluno da Escola <span className="text-[#DAA520]">Paula Pequeno</span>
+                </h3>
+                <p className="font-body text-white/60 max-w-md">
+                  Condição especial exclusiva. Todos os benefícios do lote único estão inclusos.
+                </p>
+              </div>
+
+              {/* Right Side: Price & CTA */}
+              <div className="flex flex-col items-center lg:items-end text-center lg:text-right shrink-0">
+                <div className="flex items-center gap-3 mb-1">
+                  <span className="font-body text-sm text-white/40 uppercase tracking-widest">De</span>
+                  <span className="font-display text-lg text-white/40 line-through decoration-red-500/50">R$ 2.434,00</span>
+                </div>
+                
+                <div className="flex items-baseline gap-2 mb-2">
+                  <span className="font-body text-xl text-[#DAA520]">Por</span>
+                  <span className="font-display text-4xl sm:text-5xl font-bold text-[#DAA520]">
+                    R$ 1.947,20
+                  </span>
+                </div>
+                
+                <p className="font-display text-xs sm:text-sm uppercase tracking-widest text-white/80 font-bold mb-6">
+                  em até 10x sem juros no cartão
+                </p>
+
+                <a
+                  href="https://venda.nextfit.com.br/4d5c4e02-d33e-4f3d-a401-4cf3929715c2/produtos"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-4 font-display text-xs sm:text-sm uppercase tracking-[0.2em] font-bold text-[#0A0A0A] bg-[#DAA520] hover:bg-[#FFD700] transition-all duration-300 shadow-lg shadow-[#DAA520]/20 rounded-sm"
+                >
+                  GARANTIR VAGA COM DESCONTO
+                  <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
+
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Sibling Discount Info */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="flex items-center justify-center gap-2 mt-10 text-center"
+        >
+          <Info size={16} className="text-[#DAA520]" />
+          <p className="font-display text-xs sm:text-sm uppercase tracking-widest text-white/60">
+            * Consulte os descontos para irmãos na segunda inscrição *
+          </p>
+        </motion.div>
+
         {/* Footer Support */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8, delay: 1 }}
-          className="text-center mt-12"
+          className="text-center mt-6"
         >
           <p className="font-body text-sm text-white/30">
             Dúvidas sobre o pagamento? <a href="https://wa.me/5521968997981?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20Paula%20Pequeno%20Elite%20Camp" target="_blank" rel="noopener noreferrer" className="text-[#DAA520] hover:underline">Fale com nossa equipe</a>
